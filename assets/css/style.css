@@ -479,3 +479,96 @@ svg{flex:none}
   .tabs-blog .tab.on{background:var(--navy);border-color:var(--navy);color:#fff}
   .tab-desc{margin-bottom:22px}
 }
+/* Cẩm nang: bỏ dòng mô tả rỗng */
+.tab-desc:empty{display:none}
+.tabs-blog{margin-bottom:28px}
+
+/* Blog detail */
+.pd-head{padding-bottom:40px}
+.pd-in{max-width:900px}
+.pd-head .tag{display:inline-block;margin:14px 0 14px}
+.pd-head h1{font-size:clamp(30px,4vw,44px);line-height:1.2;max-width:860px}
+.pd-head .crumb li:last-child{max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pd-by{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;margin-top:26px;padding:16px 20px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh2)}
+.pd-av{width:60px;height:60px;border-radius:50%;overflow:hidden;flex:none;border:3px solid #FFE3D0}
+.pd-av img{width:100%;height:100%;object-fit:cover}
+.pd-who{display:grid;gap:1px;line-height:1.35;min-width:0}
+.pd-who span{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--or)}
+.pd-who strong{font-size:17px;color:var(--navy)}
+.pd-who a:hover strong{color:var(--or-d)}
+.pd-who em{font-style:normal;font-size:14px;color:var(--mut)}
+.pd-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-left:auto;font-size:14.5px;color:var(--text)}
+.pd-meta li{display:flex;align-items:center;gap:7px}
+.pd-meta svg{width:17px;height:17px;color:var(--or);flex:none}
+.pd-prof{flex-basis:100%;display:none}
+.pd-sec{padding:8px 0 72px}
+.pd-wrap{max-width:900px}
+.pd-cover{margin:0 0 36px;border-radius:24px;overflow:hidden;box-shadow:var(--sh)}
+.pd-cover img{width:100%;aspect-ratio:16/8;object-fit:cover;display:block}
+.pd-art{max-width:760px;margin:0 auto}
+.pd-sum{background:linear-gradient(160deg,#F2F7FF,#FFF4EA);border:1px solid #DCE8FB;border-radius:22px;padding:26px 28px;margin-bottom:38px}
+.pd-sum h2{font-size:20px;margin:0 0 14px}
+.pd-sum ul{display:grid;gap:12px}
+.pd-sum li{display:flex;gap:12px;font-size:16px;line-height:1.6}
+.pd-sum svg{width:22px;height:22px;padding:4px;border-radius:50%;background:#FFEBDD;color:var(--or);margin-top:2px;flex:none}
+.pd-body{font-size:17.5px;line-height:1.8;color:#27324D}
+.pd-body p{margin:0 0 20px}
+.pd-body h2{font-size:28px;line-height:1.3;margin:48px 0 16px;padding-top:6px}
+.pd-body h3{font-size:21px;line-height:1.35;margin:30px 0 12px}
+.pd-body ul,.pd-body ol{margin:0 0 22px;padding-left:24px}
+.pd-body ul{list-style:disc}.pd-body ol{list-style:decimal}
+.pd-body li{margin-bottom:9px;padding-left:4px}
+.pd-body li::marker{color:var(--or);font-weight:700}
+.pd-tw{margin:6px 0 24px;overflow-x:auto;border:1px solid var(--line);border-radius:16px}
+.pd-tw table{width:100%;border-collapse:collapse;font-size:16px;line-height:1.55}
+.pd-tw th,.pd-tw td{padding:14px 18px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.pd-tw thead th{background:var(--navy);color:#fff;font-size:14px;letter-spacing:.03em}
+.pd-tw tbody tr:last-child th,.pd-tw tbody tr:last-child td{border-bottom:0}
+.pd-tw tbody th{font-weight:500;color:var(--text);background:#fff}
+.pd-tw td{font-weight:700;color:var(--navy);white-space:nowrap}
+.pd-tw tbody tr:nth-child(even) th,.pd-tw tbody tr:nth-child(even) td{background:#F7FAFF}
+.pd-note{display:flex;gap:14px;align-items:flex-start;margin:6px 0 24px;padding:18px 20px;background:#FFF4EA;border-left:4px solid var(--or);border-radius:0 16px 16px 0}
+.pd-note svg{width:24px;height:24px;color:var(--or);flex:none;margin-top:2px}
+.pd-note p{margin:0;font-size:16.5px;line-height:1.65;color:var(--navy)}
+.pd-src{margin-top:52px;padding:28px 30px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--sh2)}
+.pd-src h2{font-size:22px;margin:0 0 16px}
+.pd-src ol{display:grid;gap:0;counter-reset:s;margin:0;padding:0;list-style:none}
+.pd-src li{counter-increment:s;display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding:14px 0;border-top:1px solid var(--line)}
+.pd-src li:first-child{border-top:0;padding-top:0}
+.pd-src li>div{display:grid;gap:3px;position:relative;padding-left:34px}
+.pd-src li>div::before{content:counter(s);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;background:var(--sky);color:var(--navy);font-size:13px;font-weight:700;display:grid;place-items:center}
+.pd-src strong{font-size:16px;line-height:1.5;color:var(--navy)}
+.pd-src strong a{color:var(--blue);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.pd-src strong a:hover{color:var(--or-d)}
+.pd-src span{font-size:14.5px;color:var(--mut)}
+.pd-src time{flex:none;font-size:13.5px;font-weight:600;color:var(--navy);background:var(--sky);padding:5px 12px;border-radius:999px;white-space:nowrap}
+.pd-chk{display:flex;align-items:center;gap:10px;margin:18px 0 0;padding-top:16px;border-top:1px dashed var(--line);font-size:15px;color:var(--text)}
+.pd-chk svg{width:20px;height:20px;padding:4px;border-radius:50%;background:#E3F6EC;color:#1C8C5B;flex:none}
+.pd-rel .center{margin-top:34px}
+@media (max-width:900px){
+  .pd-meta{margin-left:0;flex-basis:100%}
+  .pd-body h2{font-size:25px}
+}
+@media (max-width:640px){
+  .pd-by{padding:16px}
+  .pd-sec{padding-bottom:56px}
+  .pd-cover{border-radius:18px;margin-bottom:26px}
+  .pd-cover img{aspect-ratio:16/10}
+  .pd-sum{padding:22px 20px}
+  .pd-body{font-size:17px}
+  .pd-body h2{font-size:23px;margin-top:40px}
+  .pd-body h3{font-size:19px}
+  .pd-tw table{font-size:15px}.pd-tw th,.pd-tw td{padding:12px 14px}
+  .pd-tw td{white-space:normal}
+  .pd-src{padding:22px 18px}
+  .pd-src li{flex-direction:column;gap:10px}
+  .pd-src li>div{padding-left:32px}
+  .pd-src time{margin-left:32px}
+}
+
+.pd-sec{padding-top:34px}
+.pd-chk time{background:none;padding:0;border-radius:0;font-size:inherit;font-weight:700;color:var(--navy)}
+.pd-tw thead th:last-child{width:190px;white-space:nowrap}
+.pd-cover img{aspect-ratio:16/7}
+@media (max-width:640px){.pd-tw thead th:last-child{width:120px;white-space:normal}.pd-cover img{aspect-ratio:16/10}}
+@media (max-width:640px){.pd-chk time{margin-left:0}}
